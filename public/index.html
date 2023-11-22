@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Cult'Création</title>
+</head>
+<body>
+    <figure>
+        <img src="./img/logo.png" alt="Logo Cult'Création">
+    </figure>
+    <div id="maDiv" class="maDiv visible"></div>
+    <div id="csvData"></div>
+    <button onclick="getCSVData()" id="button">Generate malus</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        function getCSVData() {
+            axios.get('http://localhost:3000/getMalus')
+                .then(response => {
+                    const csvData = response.data;
+                    displayCSVData(csvData);
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération des données CSV', error);
+                });
+        }
+
+        function displayCSVData(data) {
+            const csvDataContainer = document.getElementById('csvData');
+            csvDataContainer.innerHTML = '<h2>Malus :</h2>';
+
+            // Afficher la propriété 'content' dans une balise <p>
+            const p = document.createElement('p');
+            p.textContent = data.content;
+            csvDataContainer.appendChild(p);
+        }
+
+        const button = document.getElementById('button');
+        const maDiv = document.getElementById('maDiv');
+
+        button.addEventListener('click', function() {
+            // Ajoute une classe pour lancer l'animation
+            maDiv.classList.add('breathingAnimation');
+
+            // Affiche la div
+            maDiv.classList.remove('visible');
+
+            // Après la durée de l'animation, retire la classe et réinitialise la div
+            setTimeout(function() {
+                maDiv.classList.remove('breathingAnimation');
+                maDiv.classList.add('visible');
+            }, 1111990); // La durée de l'animation est de 2 secondes
+        });
+    </script>
+</body>
+</html>

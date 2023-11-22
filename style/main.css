@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Montserra';
+    src: url("Montserrat-Regular.woff2") format("woff2"),
+        url("Montserrat-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Montserra';
+    src: url("Montserrat-Italic.woff2") format("woff2"),
+        url("Montserrat-Italic.woff") format("woff");
+        font-weight: normal;
+        font-style: italic;
+}
+@font-face {
+    font-family: 'Montserra';
+    src: url("Montserrat-SemiBold.woff2") format("woff2"),
+        url("Montserrat-SemiBold.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Montserra';
+    src: url("Montserrat-SemiBoldItalic.woff2") format("woff2"),
+        url("Montserrat-SemiBoldItalic.woff") format("woff");
+        font-weight: 600;
+        font-style: italic;
+}
+@font-face {
+    font-family: 'Montserra';
+    src: url("Montserrat-Bold.woff2") format("woff2"),
+        url("Montserrat-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Montserra';
+    src: url("Montserrat-BoldItalic.woff2") format("woff2"),
+        url("Montserrat-BoldItalic.woff") format("woff");
+        font-weight: bold;
+        font-style: italic;
+}
+:root{
+    --mainColor: #EBF8FF;
+    --btn: #F193B2;
+    --black: #000;
+    --white: #FFF
+}
+body{
+    text-align: center;
+    background-color: var(--mainColor);
+    max-width: 100%;
+    font-family: "Montserra";
+}
+img{
+    width: 200px;
+}
+button{
+    background-color: var(--btn);
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    border: solid 2px var(--btn);
+}
+#csvData{
+    height: 370px;
+    margin-top: 160px;
+}
+#csvData h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+#csvData p{
+    font-style: italic;
+    font-size: 20px;
+    margin: 0 100px;
+}
+
+.maDiv {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--btn) 35%, rgba(255, 182, 193, 0) 55%);
+    animation: breathing 2s infinite;
+    position: absolute;
+    top: calc(50% - 170px);
+    left: calc(50% - 200px);
+}
+.visible{
+    display: none;
+}
+@keyframes breathing {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(0); }
+}
