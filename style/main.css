@@ -97,3 +97,174 @@ button{
     75% { transform: scale(1.2); }
     100% { transform: scale(0); }
 }
+
+@media screen and (min-width: 465px) {
+    #csvData p{
+        margin: 0 121px;
+    }
+}
+@media screen and (min-width: 507px) {
+    #csvData p{
+        margin: 0 142px;
+    }
+}
+@media screen and (min-width: 549px) {
+    #csvData p{
+        margin: 0 163px;
+    }
+}
+@media screen and (min-width: 591px) {
+    #csvData p{
+        margin: 0 184px;
+    }
+}
+@media screen and (min-width: 633px) {
+    #csvData p{
+        margin: 0 205px;
+    }
+}
+@media screen and (min-width: 675px) {
+    #csvData p{
+        margin: 0 226px;
+    }
+}
+@media screen and (min-width: 717px) {
+    #csvData p{
+        margin: 0 247px;
+    }
+}
+@media screen and (min-width: 759px) {
+    #csvData p{
+        margin: 0 268px;
+    }
+}
+@media screen and (min-width: 801px) {
+    #csvData p{
+        margin: 0 289px;
+    }
+}
+@media screen and (min-width: 843px) {
+    #csvData p{
+        margin: 0 310px;
+    }
+}
+@media screen and (min-width: 885px) {
+    #csvData p{
+        margin: 0 331px;
+    }
+}
+@media screen and (min-width: 927px) {
+    #csvData p{
+        margin: 0 352px;
+    }
+}
+@media screen and (min-width: 969px) {
+    #csvData p{
+        margin: 0 373px;
+    }
+}
+@media screen and (min-width: 1011px) {
+    #csvData p{
+        margin: 0 394px;
+    }
+}
+@media screen and (min-width: 1053px) {
+    #csvData p{
+        margin: 0 415px;
+    }
+}
+@media screen and (min-width: 1095px) {
+    #csvData p{
+        margin: 0 436px;
+    }
+}
+@media screen and (min-width: 1137px) {
+    #csvData p{
+        margin: 0 457px;
+    }
+}
+@media screen and (min-width: 1179px) {
+    #csvData p{
+        margin: 0 478px;
+    }
+}
+@media screen and (min-width: 1221px) {
+    #csvData p{
+        margin: 0 499px;
+    }
+}
+@media screen and (min-width: 1263px) {
+    #csvData p{
+        margin: 0 520px;
+    }
+}
+@media screen and (min-width: 1305px) {
+    #csvData p{
+        margin: 0 541px;
+    }
+}
+@media screen and (min-width: 1347px) {
+    #csvData p{
+        margin: 0 562px;
+    }
+}
+@media screen and (min-width: 1389px) {
+    #csvData p{
+        margin: 0 583px;
+    }
+}
+@media screen and (min-width: 1431px) {
+    #csvData p{
+        margin: 0 604px;
+    }
+}
+@media screen and (min-width: 1473px) {
+    #csvData p{
+        margin: 0 625px;
+    }
+}
+@media screen and (min-width: 1515px) {
+    #csvData p{
+        margin: 0 646px;
+    }
+}
+@media screen and (min-width: 1557px) {
+    #csvData p{
+        margin: 0 667px;
+    }
+}
+@media screen and (min-width: 1599px) {
+    #csvData p{
+        margin: 0 688px;
+    }
+}
+@media screen and (min-width: 1641px) {
+    #csvData p{
+        margin: 0 709px;
+    }
+}
+@media screen and (min-width: 1683px) {
+    #csvData p{
+        margin: 0 730px;
+    }
+}
+@media screen and (min-width: 1725px) {
+    #csvData p{
+        margin: 0 751px;
+    }
+}
+@media screen and (min-width: 1767px) {
+    #csvData p{
+        margin: 0 772px;
+    }
+}
+@media screen and (min-width: 1809px) {
+    #csvData p{
+        margin: 0 793px;
+    }
+}
+@media screen and (min-width: 1851px) {
+    #csvData p{
+        margin: 0 814px;
+    }
+}
